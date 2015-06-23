@@ -38,6 +38,7 @@ from taiga.projects.userstories.models import UserStory, RolePoints
 from taiga.projects.tasks.models import Task
 from taiga.projects.issues.models import Issue
 from taiga.permissions import service as permissions_service
+from taiga.projects.issues.models import *
 
 from . import serializers
 from . import models
@@ -226,7 +227,11 @@ class ProjectViewSet(HistoryResourceMixin, ModelCrudViewSet):
     def leave(self, request, pk=None):
         project = self.get_object()
         self.check_permissions(request, 'leave', project)
+        print([(i, i.project) for i in Issue.objects.filter(watchers=request.user)])
+        print(request.user.memberships.all())
         services.remove_user_from_project(request.user, project)
+        print([(i, i.project) for i in Issue.objects.filter(watchers=request.user)])
+        print(request.user.memberships.all())
         return response.Ok()
 
     def _set_base_permissions(self, obj):
