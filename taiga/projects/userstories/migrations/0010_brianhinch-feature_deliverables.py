@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField( 
+        migrations.AddField(
             model_name='userstory',
             name='is_a_deliverable',
             field=models.BooleanField(default=False, null=False, blank=True, verbose_name=_("represents a deliverable object or document")),
