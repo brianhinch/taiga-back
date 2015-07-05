@@ -95,6 +95,8 @@ class UserStory(OCCModelMixin, WatchedModelMixin, BlockedMixin, TaggedMixin, mod
                                              verbose_name=_("is client requirement"))
     team_requirement = models.BooleanField(default=False, null=False, blank=True,
                                            verbose_name=_("is team requirement"))
+    is_a_deliverable = models.BooleanField(default=False, null=False, blank=True,
+                                            verbose_name=_("represents a deliverable object or document"))
     attachments = generic.GenericRelation("attachments.Attachment")
     generated_from_issue = models.ForeignKey("issues.Issue", null=True, blank=True,
                                              on_delete=models.SET_NULL,
