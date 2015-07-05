@@ -1,3 +1,4 @@
+# coding: utf-8
 # Copyright (C) 2015 Andrey Antukh <niwi@niwi.be>
 # Copyright (C) 2015 Jesús Espino <jespinog@gmail.com>
 # Copyright (C) 2015 David Barragán <bameda@dbarragan.com>

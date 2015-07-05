@@ -1,3 +1,4 @@
+# coding: utf-8
 # -*- coding: utf-8 -*-
 
 # Tested on Markdown 2.3.1
