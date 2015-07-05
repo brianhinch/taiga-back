@@ -7,7 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('userstories', '0009_userstory_is_archived'),
+        ('userstories', '0009_remove_userstory_is_archived'),
     ]
 
     operations = [
