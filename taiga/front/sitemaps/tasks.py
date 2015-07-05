@@ -1,3 +1,4 @@
+# coding=utf-8
 # coding: utf-8
 # Copyright (C) 2015 David Barragán <bameda@dbarragan.com>
 # Copyright (C) 2015 Taiga Agile LLC <support@taiga.io>
